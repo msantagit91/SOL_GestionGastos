@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\ASUS\ProyectosVisual\SOL_GestionGastos\WPF-LoginForm\obj\Debug\
+C:\Users\ASUS\ProyectosWPF\SOL_GestionGastos\WPF-LoginForm\obj\Debug\
 WPF_LoginForm
 none
 false
 DEBUG;TRACE
-C:\Users\ASUS\ProyectosVisual\SOL_GestionGastos\WPF-LoginForm\App.xaml
-4158442779
+C:\Users\ASUS\ProyectosWPF\SOL_GestionGastos\WPF-LoginForm\App.xaml
+81223068553
 
-12-795031196
+16-1217283602
 13-38814620
-MainWindow.xaml;View\LoginView.xaml;View\MainView.xaml;View\V_VentanaToast.xaml;
+MainWindow.xaml;UserControls\UC_Categorias.xaml;UserControls\UC_Gastos.xaml;UserControls\UC_Home.xaml;UserControls\UC_Reportes.xaml;View\LoginView.xaml;View\MainView.xaml;View\V_VentanaToast.xaml;
 
 False
 

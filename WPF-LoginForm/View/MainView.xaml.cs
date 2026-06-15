@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using WPF_LoginForm.UserControls;
 
 namespace WPF_LoginForm.View
 {
@@ -22,6 +23,7 @@ namespace WPF_LoginForm.View
         public MainView()
         {
             InitializeComponent();
+            
         }
 
         private void btnMinimize_Click(object sender, RoutedEventArgs e)
@@ -32,6 +34,26 @@ namespace WPF_LoginForm.View
         private void btnClose_Click(object sender, RoutedEventArgs e)
         {
             Application.Current.Shutdown();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            MainContent.Content = new UC_Gastos();
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            MainContent.Content = new UC_Home();
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            MainContent.Content = new UC_Categorias();
+        }
+
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+            MainContent.Content = new UC_Reportes();
         }
     }
 }

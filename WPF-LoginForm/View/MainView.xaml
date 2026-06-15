@@ -3,6 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:uc="clr-namespace:WPF_LoginForm.UserControls"
         mc:Ignorable="d"
         Title="MainView"
         Height="550"
@@ -125,7 +126,7 @@
                     <Image Source="/View/LogoOficial3Version2.png"
                            Width="200" Height="144" Margin="0,-48,0,0" Stretch="UniformToFill"/>
 
-                    <TextBlock Text="CONTROL DE GASTOS"
+                    <TextBlock Text="GESTION DE GASTOS"
                                Foreground="White"
                                FontSize="18"
                                FontWeight="Bold"
@@ -166,23 +167,20 @@
 
                     <Button Content="🏠 Dashboard"
                     Style="{StaticResource MenuButtonStyle}"
-                    Margin="15,8"/>
+                    Margin="15,8" Click="Button_Click_1"/>
 
                     <Button Content="💰 Gastos"
                     Style="{StaticResource MenuButtonStyle}"
-                    Margin="15,-4"/>
+                    Margin="15,-4" Click="Button_Click"/>
 
                     <Button Content="📁 Categorías"
                     Style="{StaticResource MenuButtonStyle}"
-                    Margin="15,4"/>
+                    Margin="15,4" Click="Button_Click_2"/>
 
-                    <Button Content="👥 Usuarios"
-                    Style="{StaticResource MenuButtonStyle}"
-                    Margin="15,4"/>
-
+                    
                     <Button Content="📊 Reportes"
                     Style="{StaticResource MenuButtonStyle}"
-                    Margin="15,4"/>
+                    Margin="15,4" Click="Button_Click_3"/>
 
                     
 

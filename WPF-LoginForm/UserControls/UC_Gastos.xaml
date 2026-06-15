@@ -1,0 +1,136 @@
+﻿<UserControl x:Class="WPF_LoginForm.UserControls.UC_Gastos"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:local="clr-namespace:WPF_LoginForm.UserControls"
+             mc:Ignorable="d"
+             d:DesignHeight="450"
+             d:DesignWidth="800">
+
+    <Grid Background="#1C0E49">
+
+        <!-- Título -->
+
+        <TextBlock Text="REGISTRO DE GASTOS"
+                   Foreground="White"
+                   FontSize="25"
+                   FontWeight="SemiBold"
+                   FontFamily="Montserrat"
+                   HorizontalAlignment="Center"
+                   Margin="0,20,0,0"
+                   VerticalAlignment="Top"/>
+
+        <!-- Card Principal -->
+
+        <Border Margin="20,70,20,20"
+                Padding="25"
+                CornerRadius="10"
+                Background="#2A175E">
+
+            <Grid>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="120"/>
+                    <ColumnDefinition Width="300"/>
+                </Grid.ColumnDefinitions>
+
+                <!-- Descripción -->
+
+                <TextBlock Grid.Row="0"
+                           Grid.Column="0"
+                           Text="Descripción:"
+                           Foreground="WhiteSmoke"
+                           FontSize="15"
+                           FontFamily="Montserrat"
+                           VerticalAlignment="Center"/>
+
+                <TextBox Grid.Row="0"
+                         Grid.Column="1"
+                         x:Name="txtDescripcion"
+                         Height="30"
+                         FontSize="13"
+                         Foreground="White"
+                         CaretBrush="White"
+                         Background="Transparent"
+                         BorderBrush="DarkGray"
+                         BorderThickness="0,0,0,2"
+                         VerticalContentAlignment="Center"/>
+
+                <!-- Monto -->
+
+                <TextBlock Grid.Row="1"
+                           Grid.Column="0"
+                           Text="Monto:"
+                           Foreground="WhiteSmoke"
+                           FontSize="15"
+                           FontFamily="Montserrat"
+                           VerticalAlignment="Center"/>
+
+                <TextBox Grid.Row="1"
+                         Grid.Column="1"
+                         x:Name="txtMonto"
+                         Height="30"
+                         FontSize="13"
+                         Foreground="White"
+                         CaretBrush="White"
+                         Background="Transparent"
+                         BorderBrush="DarkGray"
+                         BorderThickness="0,0,0,2"
+                         VerticalContentAlignment="Center"/>
+
+                <!-- Categoría -->
+
+                <TextBlock Grid.Row="2"
+                           Grid.Column="0"
+                           Text="Categoría:"
+                           Foreground="WhiteSmoke"
+                           FontSize="15"
+                           FontFamily="Montserrat"
+                           VerticalAlignment="Center"/>
+
+                <ComboBox Grid.Row="2"
+                          Grid.Column="1"
+                          x:Name="cbCategoria"
+                          Height="30">
+
+                    <ComboBoxItem Content="Alimentación"/>
+                    <ComboBoxItem Content="Transporte"/>
+                    <ComboBoxItem Content="Servicios"/>
+                    
+                    <ComboBoxItem Content="Salud"/>
+                    <ComboBoxItem Content="Educación"/>
+                    <ComboBoxItem Content="Entretenimiento"/>
+                    <ComboBoxItem Content="Otros"/>
+
+                </ComboBox>
+
+                <!-- Fecha -->
+
+                <TextBlock Grid.Row="3"
+                           Grid.Column="0"
+                           Text="Fecha:"
+                           Foreground="WhiteSmoke"
+                           FontSize="15"
+                           FontFamily="Montserrat"
+                           VerticalAlignment="Center"/>
+
+                <DatePicker Grid.Row="3"
+                            Grid.Column="1"
+                            x:Name="dpFecha"
+                            Height="30"/>
+
+            </Grid>
+
+        </Border>
+
+    </Grid>
+
+</UserControl>
