@@ -56,6 +56,7 @@ namespace WPF_LoginForm.View
 
             if (respuesta == "OK")
             {
+                
                 MainView dashboard = new MainView();
                 dashboard.Show();
 
@@ -145,7 +146,8 @@ namespace WPF_LoginForm.View
             {
                 
                 ToastHelper.Mostrar("Usuario registrado correctamente", this);
-
+                
+                
                 txNombre.Clear();
                 txUsername.Clear();
                 txtPassword.Clear();

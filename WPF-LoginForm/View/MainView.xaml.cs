@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using WPF_LoginForm.Helpers;
 using WPF_LoginForm.UserControls;
 
 namespace WPF_LoginForm.View
@@ -23,7 +24,8 @@ namespace WPF_LoginForm.View
         public MainView()
         {
             InitializeComponent();
-            
+            txtBienvenido.Text = $"Bienvenido, {SesionUsuario.Nombre}";
+
         }
 
         private void btnMinimize_Click(object sender, RoutedEventArgs e)

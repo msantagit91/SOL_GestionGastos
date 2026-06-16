@@ -18,7 +18,7 @@ namespace WPF_LoginForm.Data
             //Constructor de la clase
             private Conexion()
             {
-                this.Servidor = "DESKTOP-Q03BGKU";
+                this.Servidor = "DESKTOP-FKVDNPQ";
                 this.Base = "db_GestionGastos";
                 this.Usuario = "moi_sa";
                 this.Clave = "123456";

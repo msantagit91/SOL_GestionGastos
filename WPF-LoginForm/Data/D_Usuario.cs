@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
+using WPF_LoginForm.Helpers;
 using WPF_LoginForm.Model;
 
 namespace WPF_LoginForm.Data
@@ -47,40 +48,53 @@ namespace WPF_LoginForm.Data
             return respuesta;
         }
 
-        public string Login(string usuario, string contrasena) 
+        public string Login(string usuario, string contrasena)
         {
             string respuesta = "";
+
             SqlConnection con = new SqlConnection();
 
             try
             {
                 con = Conexion.CrearInstancia().CrearConexion();
+
                 SqlCommand comando = new SqlCommand("SP_LOGIN", con);
+
                 comando.CommandType = CommandType.StoredProcedure;
 
-                
                 comando.Parameters.Add("@usuario", SqlDbType.VarChar).Value = usuario;
                 comando.Parameters.Add("@contrasena", SqlDbType.VarChar).Value = contrasena;
+
                 con.Open();
 
                 SqlDataReader dr = comando.ExecuteReader();
 
-                if (dr.HasRows)
+                if (dr.Read())
+                {
+                    SesionUsuario.IdUsuario =
+                        Convert.ToInt32(dr["id_usuario"]);
+
+                    SesionUsuario.Nombre =
+                        dr["nombre"].ToString();
+
+                    SesionUsuario.Usuario =
+                        dr["usuario"].ToString();
+
                     respuesta = "OK";
+                }
                 else
+                {
                     respuesta = "";
-
-
+                }
             }
-
             catch (Exception ex)
             {
                 respuesta = ex.Message;
-
             }
             finally
             {
-                if (con.State == ConnectionState.Open) con.Close();
+                if (con.State == ConnectionState.Open)
+                    con.Close();
             }
 
             return respuesta;

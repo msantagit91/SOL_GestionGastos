@@ -23,113 +23,262 @@
 
         <!-- Card Principal -->
 
-        <Border Margin="20,70,20,20"
-                Padding="25"
-                CornerRadius="10"
-                Background="#2A175E">
+        <Border Margin="10,55,10,10"
+        Padding="25"
+        CornerRadius="10"
+        Background="#2A175E">
 
             <Grid>
 
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="50"/>
-                    <RowDefinition Height="50"/>
-                    <RowDefinition Height="50"/>
-                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="80"/>
+                    <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
 
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="120"/>
-                    <ColumnDefinition Width="300"/>
-                </Grid.ColumnDefinitions>
+                <!-- FORMULARIO -->
 
-                <!-- Descripción -->
+                <Grid Grid.Row="0">
 
-                <TextBlock Grid.Row="0"
-                           Grid.Column="0"
-                           Text="Descripción:"
-                           Foreground="WhiteSmoke"
-                           FontSize="15"
-                           FontFamily="Montserrat"
-                           VerticalAlignment="Center"/>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="50"/>
+                    </Grid.RowDefinitions>
 
-                <TextBox Grid.Row="0"
-                         Grid.Column="1"
-                         x:Name="txtDescripcion"
-                         Height="30"
-                         FontSize="13"
-                         Foreground="White"
-                         CaretBrush="White"
-                         Background="Transparent"
-                         BorderBrush="DarkGray"
-                         BorderThickness="0,0,0,2"
-                         VerticalContentAlignment="Center"/>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="120"/>
+                        <ColumnDefinition Width="300"/>
+                    </Grid.ColumnDefinitions>
 
-                <!-- Monto -->
+                    <!-- Descripción -->
 
-                <TextBlock Grid.Row="1"
-                           Grid.Column="0"
-                           Text="Monto:"
-                           Foreground="WhiteSmoke"
-                           FontSize="15"
-                           FontFamily="Montserrat"
-                           VerticalAlignment="Center"/>
+                    <TextBlock Grid.Row="0"
+                       Grid.Column="0"
+                       Text="Descripción:"
+                       Foreground="WhiteSmoke"
+                       FontSize="15"
+                       FontFamily="Montserrat"
+                       VerticalAlignment="Center"/>
 
-                <TextBox Grid.Row="1"
-                         Grid.Column="1"
-                         x:Name="txtMonto"
-                         Height="30"
-                         FontSize="13"
-                         Foreground="White"
-                         CaretBrush="White"
-                         Background="Transparent"
-                         BorderBrush="DarkGray"
-                         BorderThickness="0,0,0,2"
-                         VerticalContentAlignment="Center"/>
+                    <TextBox Grid.Row="0"
+                     Grid.Column="1"
+                     x:Name="txtDescripcion"
+                     Height="30"
+                     FontSize="13"
+                     Foreground="White"
+                     CaretBrush="White"
+                     Background="Transparent"
+                     BorderBrush="DarkGray"
+                     BorderThickness="0,0,0,2"
+                     VerticalContentAlignment="Center"/>
 
-                <!-- Categoría -->
+                    <!-- Monto -->
 
-                <TextBlock Grid.Row="2"
-                           Grid.Column="0"
-                           Text="Categoría:"
-                           Foreground="WhiteSmoke"
-                           FontSize="15"
-                           FontFamily="Montserrat"
-                           VerticalAlignment="Center"/>
+                    <TextBlock Grid.Row="1"
+                       Grid.Column="0"
+                       Text="Monto:"
+                       Foreground="WhiteSmoke"
+                       FontSize="15"
+                       FontFamily="Montserrat"
+                       VerticalAlignment="Center"/>
 
-                <ComboBox Grid.Row="2"
-                          Grid.Column="1"
-                          x:Name="cbCategoria"
-                          Height="30">
+                    <TextBox Grid.Row="1"
+                     Grid.Column="1"
+                     x:Name="txtMonto"
+                     Height="30"
+                     FontSize="13"
+                     Foreground="White"
+                     CaretBrush="White"
+                     Background="Transparent"
+                     BorderBrush="DarkGray"
+                     BorderThickness="0,0,0,2"
+                     VerticalContentAlignment="Center"/>
 
-                    <ComboBoxItem Content="Alimentación"/>
-                    <ComboBoxItem Content="Transporte"/>
-                    <ComboBoxItem Content="Servicios"/>
-                    
-                    <ComboBoxItem Content="Salud"/>
-                    <ComboBoxItem Content="Educación"/>
-                    <ComboBoxItem Content="Entretenimiento"/>
-                    <ComboBoxItem Content="Otros"/>
+                    <!-- Categoría -->
 
-                </ComboBox>
+                    <TextBlock Grid.Row="2"
+                       Grid.Column="0"
+                       Text="Categoría:"
+                       Foreground="WhiteSmoke"
+                       FontSize="15"
+                       FontFamily="Montserrat"
+                       VerticalAlignment="Center"/>
 
-                <!-- Fecha -->
+                    <ComboBox Grid.Row="2"
+                      Grid.Column="1"
+                      x:Name="cbCategoria"
+                      Height="30"/>
 
-                <TextBlock Grid.Row="3"
-                           Grid.Column="0"
-                           Text="Fecha:"
-                           Foreground="WhiteSmoke"
-                           FontSize="15"
-                           FontFamily="Montserrat"
-                           VerticalAlignment="Center"/>
 
-                <DatePicker Grid.Row="3"
-                            Grid.Column="1"
-                            x:Name="dpFecha"
-                            Height="30"/>
+                    <!-- Fecha -->
+
+                    <TextBlock Grid.Row="3"
+                       Grid.Column="0"
+                       Text="Fecha:"
+                       Foreground="WhiteSmoke"
+                       FontSize="15"
+                       FontFamily="Montserrat"
+                       VerticalAlignment="Center"/>
+
+                    <DatePicker Grid.Row="3"
+                        Grid.Column="1"
+                        x:Name="dpFecha"
+                        Height="30"/>
+
+                </Grid>
+
+                <!-- BOTONES -->
+
+                <StackPanel Grid.Row="1"
+                    Orientation="Horizontal"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center">
+
+                    <Button x:Name="btnGuardar"
+                    Content="💾 Guardar"
+                    Width="120"
+                    Height="40"
+                    Margin="5"
+                    Background="#6C63FF"
+                    Foreground="White"
+                    BorderThickness="0"
+                    Cursor="Hand"
+                    FontFamily="Montserrat"
+                    FontWeight="SemiBold" Click="btnGuardar_Click"/>
+
+                    <Button x:Name="btnEditar"
+                    Content="✏️ Editar"
+                    Width="120"
+                    Height="40"
+                    Margin="5"
+                    Background="#3B82F6"
+                    Foreground="White"
+                    BorderThickness="0"
+                    Cursor="Hand"
+                    FontFamily="Montserrat"
+                    FontWeight="SemiBold" Click="btnEditar_Click"/>
+
+                    <Button x:Name="btnEliminar"
+                    Content="🗑 Eliminar"
+                    Width="120"
+                    Height="40"
+                    Margin="5"
+                    Background="#EF4444"
+                    Foreground="White"
+                    BorderThickness="0"
+                    Cursor="Hand"
+                    FontFamily="Montserrat"
+                    FontWeight="SemiBold" Click="btnEliminar_Click"/>
+
+                    <Button x:Name="btnLimpiar"
+                    Content="🧹 Limpiar"
+                    Width="120"
+                    Height="40"
+                    Margin="5"
+                    Background="#F59E0B"
+                    Foreground="White"
+                    BorderThickness="0"
+                    Cursor="Hand"
+                    FontFamily="Montserrat"
+                    FontWeight="SemiBold" Click="btnLimpiar_Click"/>
+
+                </StackPanel>
+
+                <DataGrid Grid.Row="2"
+          SelectionChanged="dgvGastos_SelectionChanged"
+          x:Name="dgvGastos"
+          Margin="0,10,0,0"
+          AutoGenerateColumns="False"
+          CanUserAddRows="False"
+          IsReadOnly="True"
+          HeadersVisibility="Column"
+          Background="#2A175E"
+          Foreground="White"
+          BorderBrush="#6C63FF"
+          BorderThickness="1"
+          RowBackground="#2A175E"
+          AlternatingRowBackground="#36206E"
+          GridLinesVisibility="Horizontal">
+
+                    <DataGrid.Resources>
+
+                        <!-- Encabezados -->
+
+                        <Style TargetType="DataGridColumnHeader">
+                            <Setter Property="Background" Value="#6C63FF"/>
+                            <Setter Property="Foreground" Value="White"/>
+                            <Setter Property="FontWeight" Value="SemiBold"/>
+                            <Setter Property="FontFamily" Value="Montserrat"/>
+                            <Setter Property="Height" Value="35"/>
+                            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                        </Style>
+
+                        <!-- Celdas -->
+
+                        <Style TargetType="DataGridCell">
+                            <Setter Property="Foreground" Value="White"/>
+                            <Setter Property="Background" Value="Transparent"/>
+                            <Setter Property="BorderThickness" Value="0"/>
+                            <Setter Property="Padding" Value="5"/>
+                        </Style>
+
+                        <!-- Filas -->
+
+                        <Style TargetType="DataGridRow">
+                            <Setter Property="Height" Value="35"/>
+
+                            <Style.Triggers>
+
+                                <Trigger Property="IsSelected"
+                         Value="True">
+
+                                    <Setter Property="Background"
+                            Value="#6C63FF"/>
+
+                                    <Setter Property="Foreground"
+                            Value="White"/>
+
+                                </Trigger>
+
+                            </Style.Triggers>
+
+                        </Style>
+
+                    </DataGrid.Resources>
+
+                    <DataGrid.Columns>
+
+                        <DataGridTextColumn Header="ID"
+                            Binding="{Binding id_gastos}"
+                            Width="70"/>
+
+                        <DataGridTextColumn Header="Descripción"
+                            Binding="{Binding descripcion}"
+                            Width="*"/>
+
+                        <DataGridTextColumn Header="Monto"
+                            Binding="{Binding monto, StringFormat=N0}"
+                            Width="120"/>
+
+                        <DataGridTextColumn Header="Categoría"
+                            Binding="{Binding categoria}"
+                            Width="150"/>
+
+                        <DataGridTextColumn Header="Fecha"
+                            Binding="{Binding fecha, StringFormat=dd/MM/yyyy}"
+                            Width="120"/>
+
+                    </DataGrid.Columns>
+
+                </DataGrid>
 
             </Grid>
 
         </Border>
+
+
 
     </Grid>
 

@@ -1,38 +1,30 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\ASUS\\ProyectosWPF\\SOL_GestionGastos\\",
+  "WorkspaceRootPath": "C:\\Users\\HP\\ProyectosWPF\\SOL_GestionGastos\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B88027D1-FD36-4AA4-8FE3-1803A15C3EF2}|WPF-LoginForm\\Wpf_GestionGastos.csproj|c:\\users\\asus\\proyectoswpf\\sol_gestiongastos\\wpf-loginform\\usercontrols\\uc_gastos.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{B88027D1-FD36-4AA4-8FE3-1803A15C3EF2}|WPF-LoginForm\\Wpf_GestionGastos.csproj|solutionrelative:wpf-loginform\\usercontrols\\uc_gastos.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{B88027D1-FD36-4AA4-8FE3-1803A15C3EF2}|WPF-LoginForm\\Wpf_GestionGastos.csproj|C:\\Users\\HP\\ProyectosWPF\\SOL_GestionGastos\\wpf-loginform\\usercontrols\\uc_home.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B88027D1-FD36-4AA4-8FE3-1803A15C3EF2}|WPF-LoginForm\\Wpf_GestionGastos.csproj|solutionrelative:wpf-loginform\\usercontrols\\uc_home.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B88027D1-FD36-4AA4-8FE3-1803A15C3EF2}|WPF-LoginForm\\Wpf_GestionGastos.csproj|C:\\Users\\ASUS\\ProyectosWPF\\SOL_GestionGastos\\wpf-loginform\\view\\loginview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{B88027D1-FD36-4AA4-8FE3-1803A15C3EF2}|WPF-LoginForm\\Wpf_GestionGastos.csproj|solutionrelative:wpf-loginform\\view\\loginview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B88027D1-FD36-4AA4-8FE3-1803A15C3EF2}|WPF-LoginForm\\Wpf_GestionGastos.csproj|c:\\users\\asus\\proyectoswpf\\sol_gestiongastos\\wpf-loginform\\usercontrols\\uc_reportes.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{B88027D1-FD36-4AA4-8FE3-1803A15C3EF2}|WPF-LoginForm\\Wpf_GestionGastos.csproj|solutionrelative:wpf-loginform\\usercontrols\\uc_reportes.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B88027D1-FD36-4AA4-8FE3-1803A15C3EF2}|WPF-LoginForm\\Wpf_GestionGastos.csproj|c:\\users\\asus\\proyectoswpf\\sol_gestiongastos\\wpf-loginform\\usercontrols\\uc_home.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{B88027D1-FD36-4AA4-8FE3-1803A15C3EF2}|WPF-LoginForm\\Wpf_GestionGastos.csproj|c:\\users\\hp\\proyectoswpf\\sol_gestiongastos\\wpf-loginform\\usercontrols\\uc_home.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{B88027D1-FD36-4AA4-8FE3-1803A15C3EF2}|WPF-LoginForm\\Wpf_GestionGastos.csproj|solutionrelative:wpf-loginform\\usercontrols\\uc_home.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B88027D1-FD36-4AA4-8FE3-1803A15C3EF2}|WPF-LoginForm\\Wpf_GestionGastos.csproj|c:\\users\\asus\\proyectoswpf\\sol_gestiongastos\\wpf-loginform\\usercontrols\\uc_categorias.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{B88027D1-FD36-4AA4-8FE3-1803A15C3EF2}|WPF-LoginForm\\Wpf_GestionGastos.csproj|solutionrelative:wpf-loginform\\usercontrols\\uc_categorias.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{B88027D1-FD36-4AA4-8FE3-1803A15C3EF2}|WPF-LoginForm\\Wpf_GestionGastos.csproj|C:\\Users\\HP\\ProyectosWPF\\SOL_GestionGastos\\wpf-loginform\\usercontrols\\uc_gastos.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{B88027D1-FD36-4AA4-8FE3-1803A15C3EF2}|WPF-LoginForm\\Wpf_GestionGastos.csproj|solutionrelative:wpf-loginform\\usercontrols\\uc_gastos.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B88027D1-FD36-4AA4-8FE3-1803A15C3EF2}|WPF-LoginForm\\Wpf_GestionGastos.csproj|c:\\users\\asus\\proyectoswpf\\sol_gestiongastos\\wpf-loginform\\view\\loginview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B88027D1-FD36-4AA4-8FE3-1803A15C3EF2}|WPF-LoginForm\\Wpf_GestionGastos.csproj|solutionrelative:wpf-loginform\\view\\loginview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B88027D1-FD36-4AA4-8FE3-1803A15C3EF2}|WPF-LoginForm\\Wpf_GestionGastos.csproj|C:\\Users\\HP\\ProyectosWPF\\SOL_GestionGastos\\wpf-loginform\\view\\mainview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B88027D1-FD36-4AA4-8FE3-1803A15C3EF2}|WPF-LoginForm\\Wpf_GestionGastos.csproj|solutionrelative:wpf-loginform\\view\\mainview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B88027D1-FD36-4AA4-8FE3-1803A15C3EF2}|WPF-LoginForm\\Wpf_GestionGastos.csproj|C:\\Users\\ASUS\\ProyectosWPF\\SOL_GestionGastos\\wpf-loginform\\data\\d_usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B88027D1-FD36-4AA4-8FE3-1803A15C3EF2}|WPF-LoginForm\\Wpf_GestionGastos.csproj|C:\\Users\\HP\\ProyectosWPF\\SOL_GestionGastos\\wpf-loginform\\view\\mainview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{B88027D1-FD36-4AA4-8FE3-1803A15C3EF2}|WPF-LoginForm\\Wpf_GestionGastos.csproj|solutionrelative:wpf-loginform\\view\\mainview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B88027D1-FD36-4AA4-8FE3-1803A15C3EF2}|WPF-LoginForm\\Wpf_GestionGastos.csproj|C:\\Users\\HP\\ProyectosWPF\\SOL_GestionGastos\\wpf-loginform\\data\\d_usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B88027D1-FD36-4AA4-8FE3-1803A15C3EF2}|WPF-LoginForm\\Wpf_GestionGastos.csproj|solutionrelative:wpf-loginform\\data\\d_usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B88027D1-FD36-4AA4-8FE3-1803A15C3EF2}|WPF-LoginForm\\Wpf_GestionGastos.csproj|C:\\Users\\ASUS\\ProyectosWPF\\SOL_GestionGastos\\wpf-loginform\\helpers\\toasthelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B88027D1-FD36-4AA4-8FE3-1803A15C3EF2}|WPF-LoginForm\\Wpf_GestionGastos.csproj|solutionrelative:wpf-loginform\\helpers\\toasthelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -50,11 +42,23 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
+              "Title": "MainView.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\ProyectosWPF\\SOL_GestionGastos\\WPF-LoginForm\\View\\MainView.xaml.cs",
+              "RelativeDocumentMoniker": "WPF-LoginForm\\View\\MainView.xaml.cs",
+              "ToolTip": "C:\\Users\\HP\\ProyectosWPF\\SOL_GestionGastos\\WPF-LoginForm\\View\\MainView.xaml.cs",
+              "RelativeToolTip": "WPF-LoginForm\\View\\MainView.xaml.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAIA0wC8AAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-15T23:59:11.168Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "UC_Gastos.xaml",
-              "DocumentMoniker": "C:\\Users\\ASUS\\ProyectosWPF\\SOL_GestionGastos\\WPF-LoginForm\\UserControls\\UC_Gastos.xaml",
+              "DocumentMoniker": "C:\\Users\\HP\\ProyectosWPF\\SOL_GestionGastos\\WPF-LoginForm\\UserControls\\UC_Gastos.xaml",
               "RelativeDocumentMoniker": "WPF-LoginForm\\UserControls\\UC_Gastos.xaml",
-              "ToolTip": "C:\\Users\\ASUS\\ProyectosWPF\\SOL_GestionGastos\\WPF-LoginForm\\UserControls\\UC_Gastos.xaml",
+              "ToolTip": "C:\\Users\\HP\\ProyectosWPF\\SOL_GestionGastos\\WPF-LoginForm\\UserControls\\UC_Gastos.xaml",
               "RelativeToolTip": "WPF-LoginForm\\UserControls\\UC_Gastos.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2026-06-14T18:10:17.309Z",
@@ -62,23 +66,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "UC_Reportes.xaml",
-              "DocumentMoniker": "C:\\Users\\ASUS\\ProyectosWPF\\SOL_GestionGastos\\WPF-LoginForm\\UserControls\\UC_Reportes.xaml",
-              "RelativeDocumentMoniker": "WPF-LoginForm\\UserControls\\UC_Reportes.xaml",
-              "ToolTip": "C:\\Users\\ASUS\\ProyectosWPF\\SOL_GestionGastos\\WPF-LoginForm\\UserControls\\UC_Reportes.xaml",
-              "RelativeToolTip": "WPF-LoginForm\\UserControls\\UC_Reportes.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-06-14T18:26:19.115Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "UC_Home.xaml",
-              "DocumentMoniker": "C:\\Users\\ASUS\\ProyectosWPF\\SOL_GestionGastos\\WPF-LoginForm\\UserControls\\UC_Home.xaml",
+              "DocumentMoniker": "C:\\Users\\HP\\ProyectosWPF\\SOL_GestionGastos\\WPF-LoginForm\\UserControls\\UC_Home.xaml",
               "RelativeDocumentMoniker": "WPF-LoginForm\\UserControls\\UC_Home.xaml",
-              "ToolTip": "C:\\Users\\ASUS\\ProyectosWPF\\SOL_GestionGastos\\WPF-LoginForm\\UserControls\\UC_Home.xaml",
+              "ToolTip": "C:\\Users\\HP\\ProyectosWPF\\SOL_GestionGastos\\WPF-LoginForm\\UserControls\\UC_Home.xaml",
               "RelativeToolTip": "WPF-LoginForm\\UserControls\\UC_Home.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2026-06-14T18:26:00.993Z",
@@ -86,64 +78,40 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "LoginView.xaml",
-              "DocumentMoniker": "C:\\Users\\ASUS\\ProyectosWPF\\SOL_GestionGastos\\WPF-LoginForm\\View\\LoginView.xaml",
-              "RelativeDocumentMoniker": "WPF-LoginForm\\View\\LoginView.xaml",
-              "ToolTip": "C:\\Users\\ASUS\\ProyectosWPF\\SOL_GestionGastos\\WPF-LoginForm\\View\\LoginView.xaml",
-              "RelativeToolTip": "WPF-LoginForm\\View\\LoginView.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-06-09T01:21:14.683Z",
+              "DocumentIndex": 0,
+              "Title": "UC_Home.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\ProyectosWPF\\SOL_GestionGastos\\WPF-LoginForm\\UserControls\\UC_Home.xaml.cs",
+              "RelativeDocumentMoniker": "WPF-LoginForm\\UserControls\\UC_Home.xaml.cs",
+              "ToolTip": "C:\\Users\\HP\\ProyectosWPF\\SOL_GestionGastos\\WPF-LoginForm\\UserControls\\UC_Home.xaml.cs",
+              "RelativeToolTip": "WPF-LoginForm\\UserControls\\UC_Home.xaml.cs",
+              "ViewState": "AgIAAAsAAAAAZ2ZmZmYOwBMAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-16T05:02:04.543Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "UC_Categorias.xaml",
-              "DocumentMoniker": "C:\\Users\\ASUS\\ProyectosWPF\\SOL_GestionGastos\\WPF-LoginForm\\UserControls\\UC_Categorias.xaml",
-              "RelativeDocumentMoniker": "WPF-LoginForm\\UserControls\\UC_Categorias.xaml",
-              "ToolTip": "C:\\Users\\ASUS\\ProyectosWPF\\SOL_GestionGastos\\WPF-LoginForm\\UserControls\\UC_Categorias.xaml",
-              "RelativeToolTip": "WPF-LoginForm\\UserControls\\UC_Categorias.xaml",
+              "Title": "MainView.xaml",
+              "DocumentMoniker": "C:\\Users\\HP\\ProyectosWPF\\SOL_GestionGastos\\WPF-LoginForm\\View\\MainView.xaml",
+              "RelativeDocumentMoniker": "WPF-LoginForm\\View\\MainView.xaml",
+              "ToolTip": "C:\\Users\\HP\\ProyectosWPF\\SOL_GestionGastos\\WPF-LoginForm\\View\\MainView.xaml",
+              "RelativeToolTip": "WPF-LoginForm\\View\\MainView.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-06-14T18:26:35.711Z",
+              "WhenOpened": "2026-06-15T19:11:29.127Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "LoginView.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS\\ProyectosWPF\\SOL_GestionGastos\\WPF-LoginForm\\View\\LoginView.xaml.cs",
-              "RelativeDocumentMoniker": "WPF-LoginForm\\View\\LoginView.xaml.cs",
-              "ToolTip": "C:\\Users\\ASUS\\ProyectosWPF\\SOL_GestionGastos\\WPF-LoginForm\\View\\LoginView.xaml.cs",
-              "RelativeToolTip": "WPF-LoginForm\\View\\LoginView.xaml.cs",
-              "ViewState": "AgIAAC4AAAAAAAAAAAAgwDIAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-14T17:14:28.586Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
               "Title": "D_Usuario.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS\\ProyectosWPF\\SOL_GestionGastos\\WPF-LoginForm\\Data\\D_Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\ProyectosWPF\\SOL_GestionGastos\\WPF-LoginForm\\Data\\D_Usuario.cs",
               "RelativeDocumentMoniker": "WPF-LoginForm\\Data\\D_Usuario.cs",
-              "ToolTip": "C:\\Users\\ASUS\\ProyectosWPF\\SOL_GestionGastos\\WPF-LoginForm\\Data\\D_Usuario.cs",
+              "ToolTip": "C:\\Users\\HP\\ProyectosWPF\\SOL_GestionGastos\\WPF-LoginForm\\Data\\D_Usuario.cs",
               "RelativeToolTip": "WPF-LoginForm\\Data\\D_Usuario.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAADwAAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAAEoAAABAZmZmZmYgwFYAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-10T01:32:32.924Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ToastHelper.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS\\ProyectosWPF\\SOL_GestionGastos\\WPF-LoginForm\\Helpers\\ToastHelper.cs",
-              "RelativeDocumentMoniker": "WPF-LoginForm\\Helpers\\ToastHelper.cs",
-              "ToolTip": "C:\\Users\\ASUS\\ProyectosWPF\\SOL_GestionGastos\\WPF-LoginForm\\Helpers\\ToastHelper.cs",
-              "RelativeToolTip": "WPF-LoginForm\\Helpers\\ToastHelper.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-10T03:59:59.237Z"
             }
           ]
         }
