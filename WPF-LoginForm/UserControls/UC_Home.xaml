@@ -142,9 +142,10 @@
                    FontFamily="Montserrat"/>
 
                         <lvc:PieChart Grid.Row="1"
-              Series="{Binding PieSeries}"
-              LegendLocation="Right"
-              Margin="0,10,0,0"/>
+                          Series="{Binding PieSeries}"
+                          LegendLocation="Right"
+                          Foreground="White"
+                          Margin="0,10,0,0"/>
 
                     </Grid>
 

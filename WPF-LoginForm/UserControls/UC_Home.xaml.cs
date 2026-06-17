@@ -11,6 +11,7 @@ using LiveCharts;
 using LiveCharts.Wpf;
 using System;
 using System.Data.SqlClient;
+using System.Windows.Media;
 
 
 namespace WPF_LoginForm.UserControls
@@ -36,6 +37,8 @@ namespace WPF_LoginForm.UserControls
 
         private void CargarGraficoGastosPorCategoria()
         {
+            int indiceColor = 0;
+
             using (SqlConnection con = Conexion.CrearInstancia().CrearConexion())
             {
                 SqlCommand cmd = new SqlCommand("SP_GASTOS_POR_CATEGORIA", con);
@@ -53,11 +56,16 @@ namespace WPF_LoginForm.UserControls
                     {
                         Title = reader["Categoria"].ToString(),
                         Values = new ChartValues<decimal>
-                        {
-                            Convert.ToDecimal(reader["Total"])
-                        },
-                        DataLabels = true
+                    {
+                        Convert.ToDecimal(reader["Total"])
+                    },
+                        DataLabels = true,
+                        Fill = new SolidColorBrush(
+                        (Color)ColorConverter.ConvertFromString(
+                        coloresNeon[indiceColor % coloresNeon.Length]))
                     });
+
+                    indiceColor++;
                 }
             }
         }
@@ -88,8 +96,18 @@ namespace WPF_LoginForm.UserControls
             }
         }
 
-        
+        private readonly string[] coloresNeon =
+        {
+            "#00E5FF",
+            "#FF00FF",
+            "#9D4EDD",
+            "#00F5D4",
+            "#FF4D9D",
+            "#7209B7",
+            "#3A86FF",
+            "#FB5607"
+        };
 
-        
+
     }
 }
