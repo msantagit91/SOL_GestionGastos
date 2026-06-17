@@ -8,6 +8,8 @@ using System.Threading.Tasks;
 using System.Windows;
 using WPF_LoginForm.Helpers;
 using WPF_LoginForm.Model;
+using WPF_LoginForm.UserControls;
+
 
 namespace WPF_LoginForm.Data
 {
@@ -46,5 +48,44 @@ namespace WPF_LoginForm.Data
 
             return tabla;
         }
+
+        public string GuardarCategoria(string descripcion)
+        {
+            string respuesta = "";
+
+            using (SqlConnection con = Conexion.CrearInstancia().CrearConexion())
+            {
+                SqlCommand cmd = new SqlCommand("SP_GUARDAR_CATEGORIA", con);
+                cmd.CommandType = CommandType.StoredProcedure;
+
+                cmd.Parameters.Add("@descripcion", SqlDbType.VarChar).Value = descripcion;
+
+                con.Open();
+
+                respuesta = cmd.ExecuteNonQuery() >= 1
+                    ? "OK"
+                    : "No se pudo guardar la categoría";
+            }
+
+            return respuesta;
+        }
+
+        public DataTable ListarCategoriasMante()
+        {
+            DataTable tabla = new DataTable();
+
+            using (SqlConnection con = Conexion.CrearInstancia().CrearConexion())
+            {
+                SqlCommand cmd = new SqlCommand("SP_LISTAR_CATEGORIAS_MANTE", con);
+                con.Open();
+
+                SqlDataReader reader = cmd.ExecuteReader();
+                tabla.Load(reader);
+            }
+
+            return tabla;
+        }
+
+        
     }
 }

@@ -1,28 +1,56 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Data;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
+using WPF_LoginForm.Data;
+using WPF_LoginForm.Helpers;
+using WPF_LoginForm.Model;
 
 namespace WPF_LoginForm.UserControls
 {
-    /// <summary>
-    /// Lógica de interacción para UC_Categorias.xaml
-    /// </summary>
     public partial class UC_Categorias : UserControl
     {
         public UC_Categorias()
         {
             InitializeComponent();
+            CargarCategorias();
+        }
+
+        private void CargarCategorias()
+        {
+            D_Categorias datos = new D_Categorias();
+
+            cbCategorias.ItemsSource = datos.ListarCategoriasMante().DefaultView;
+            cbCategorias.DisplayMemberPath = "descripcion";
+            cbCategorias.SelectedValuePath = "id_categoria";
+        }
+
+        private void btnGuardarCategoria_Click(object sender, RoutedEventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(txtDescripcionCategoria.Text))
+            {
+                ToastHelper.Mostrar("Digite el nombre de la categoría.", Window.GetWindow(this));
+                txtDescripcionCategoria.Focus();
+                return;
+            }
+
+            D_Categorias datos = new D_Categorias();
+
+            string respuesta = datos.GuardarCategoria(txtDescripcionCategoria.Text.Trim());
+
+            if (respuesta == "OK")
+            {
+                ToastHelper.Mostrar("Categoría guardada correctamente",Window.GetWindow(this));
+
+                txtDescripcionCategoria.Clear();
+                txtDescripcionCategoria.Focus();
+
+                CargarCategorias();
+            }
+            else
+            {
+                MessageBox.Show(respuesta, "Sistema", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
         }
     }
 }

@@ -1,13 +1,122 @@
 ﻿<UserControl x:Class="WPF_LoginForm.UserControls.UC_Categorias"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             xmlns:local="clr-namespace:WPF_LoginForm.UserControls"
-             mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
-    <Grid>
-        <TextBlock Text="CATEGORIAS" FontSize="25" Background="Beige" FontStyle="Normal" FontWeight="UltraBlack"/>
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             mc:Ignorable="d"
+             d:DesignHeight="500"
+             d:DesignWidth="850">
+
+    <UserControl.Resources>
+
+        <Style x:Key="TextoTitulo" TargetType="TextBlock">
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="FontSize" Value="22"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Margin" Value="0,0,0,20"/>
+        </Style>
+
+        <Style x:Key="TextoLabel" TargetType="TextBlock">
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="Margin" Value="0,0,0,6"/>
+        </Style>
+
+        <Style x:Key="CajaTextoNeon" TargetType="TextBox">
+            <Setter Property="Height" Value="38"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="CaretBrush" Value="White"/>
+            <Setter Property="Background" Value="#2A175E"/>
+            <Setter Property="BorderBrush" Value="#DA34AE"/>
+            <Setter Property="BorderThickness" Value="1.5"/>
+            <Setter Property="Padding" Value="10,0"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+        </Style>
+
+        <Style x:Key="ComboNeon" TargetType="ComboBox">
+            <Setter Property="Height" Value="38"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="Background" Value="#2A175E"/>
+            <Setter Property="BorderBrush" Value="#00E5FF"/>
+            <Setter Property="BorderThickness" Value="1.5"/>
+            <Setter Property="Padding" Value="8,0"/>
+        </Style>
+
+        <Style x:Key="BotonGuardarNeon" TargetType="Button">
+            <Setter Property="Height" Value="42"/>
+            <Setter Property="Width" Value="150"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Background">
+                <Setter.Value>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                        <GradientStop Color="#462AD8" Offset="0"/>
+                        <GradientStop Color="#DA34AE" Offset="1"/>
+                    </LinearGradientBrush>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+    </UserControl.Resources>
+
+    <Grid Background="#1C0E49">
+
+        <Border Margin="30"
+                CornerRadius="18"
+                Background="#2A175E"
+                Padding="30">
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <TextBlock Grid.Row="0"
+                           Text="MANTENIMIENTO DE CATEGORÍAS"
+                           Style="{StaticResource TextoTitulo}"/>
+
+                <StackPanel Grid.Row="1"
+                            Orientation="Vertical"
+                            Width="420"
+                            HorizontalAlignment="Left">
+
+                    <TextBlock Text="Nueva categoría"
+                               Style="{StaticResource TextoLabel}"/>
+
+                    <TextBox x:Name="txtDescripcionCategoria"
+                             Style="{StaticResource CajaTextoNeon}"
+                             MaxLength="30"
+                             Margin="0,0,0,18"/>
+
+                    <TextBlock Text="Categorías registradas"
+                               Style="{StaticResource TextoLabel}"/>
+
+                    <ComboBox x:Name="cbCategorias"
+                              Style="{StaticResource ComboNeon}"
+                              DisplayMemberPath="descripcion"
+                              SelectedValuePath="id_categoria"
+                              Margin="0,0,0,25"
+                              Foreground="Black"/>
+
+                    <Button x:Name="btnGuardarCategoria"
+                            Content="GUARDAR"
+                            Style="{StaticResource BotonGuardarNeon}"
+                            Click="btnGuardarCategoria_Click"/>
+
+                </StackPanel>
+
+            </Grid>
+
+        </Border>
 
     </Grid>
 </UserControl>

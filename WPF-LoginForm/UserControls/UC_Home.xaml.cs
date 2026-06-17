@@ -60,6 +60,7 @@ namespace WPF_LoginForm.UserControls
                         Convert.ToDecimal(reader["Total"])
                     },
                         DataLabels = true,
+                        LabelPoint = chartPoint => chartPoint.Y.ToString("N0"),
                         Fill = new SolidColorBrush(
                         (Color)ColorConverter.ConvertFromString(
                         coloresNeon[indiceColor % coloresNeon.Length]))
