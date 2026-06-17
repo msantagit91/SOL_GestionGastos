@@ -1,23 +1,59 @@
 ﻿using LiveChartsCore;
 using LiveChartsCore.SkiaSharpView;
+using System.Collections.ObjectModel;
+using System.Data;
 using System.Windows;
 using System.Windows.Controls;
-using System.Data;
 using WPF_LoginForm.Data;
 using WPF_LoginForm.Helpers;
 using WPF_LoginForm.Model;
+using LiveCharts;
+using LiveCharts.Wpf;
 
 namespace WPF_LoginForm.UserControls
 {
     public partial class UC_Home : UserControl
     {
+        
+        public SeriesCollection PieSeries { get; set; }
         public UC_Home()
         {
             InitializeComponent();
+
+            PieSeries = new SeriesCollection
+{
+    new PieSeries
+    {
+        Title = "Comida",
+        Values = new ChartValues<double> { 45000 },
+        DataLabels = true
+    },
+    new PieSeries
+    {
+        Title = "Transporte",
+        Values = new ChartValues<double> { 25000 },
+        DataLabels = true
+    },
+    new PieSeries
+    {
+        Title = "Servicios",
+        Values = new ChartValues<double> { 60000 },
+        DataLabels = true
+    },
+    new PieSeries
+    {
+        Title = "Otros",
+        Values = new ChartValues<double> { 30000 },
+        DataLabels = true
+    }
+};
+
+            DataContext = this;
+
+            DataContext = this;
+
             CargarResumen();
             CargarUltimosGastos();
-
-           
         }
 
         private void CargarResumen()
