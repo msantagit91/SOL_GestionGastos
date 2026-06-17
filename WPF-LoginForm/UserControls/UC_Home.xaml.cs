@@ -9,51 +9,57 @@ using WPF_LoginForm.Helpers;
 using WPF_LoginForm.Model;
 using LiveCharts;
 using LiveCharts.Wpf;
+using System;
+using System.Data.SqlClient;
+
 
 namespace WPF_LoginForm.UserControls
 {
     public partial class UC_Home : UserControl
     {
-        
+
         public SeriesCollection PieSeries { get; set; }
         public UC_Home()
         {
             InitializeComponent();
 
-            PieSeries = new SeriesCollection
-{
-    new PieSeries
-    {
-        Title = "Comida",
-        Values = new ChartValues<double> { 45000 },
-        DataLabels = true
-    },
-    new PieSeries
-    {
-        Title = "Transporte",
-        Values = new ChartValues<double> { 25000 },
-        DataLabels = true
-    },
-    new PieSeries
-    {
-        Title = "Servicios",
-        Values = new ChartValues<double> { 60000 },
-        DataLabels = true
-    },
-    new PieSeries
-    {
-        Title = "Otros",
-        Values = new ChartValues<double> { 30000 },
-        DataLabels = true
-    }
-};
+            PieSeries = new SeriesCollection();
+
+            CargarGraficoGastosPorCategoria();
 
             DataContext = this;
 
-            DataContext = this;
 
             CargarResumen();
             CargarUltimosGastos();
+        }
+
+        private void CargarGraficoGastosPorCategoria()
+        {
+            using (SqlConnection con = Conexion.CrearInstancia().CrearConexion())
+            {
+                SqlCommand cmd = new SqlCommand("SP_GASTOS_POR_CATEGORIA", con);
+                cmd.CommandType = CommandType.StoredProcedure;
+
+                cmd.Parameters.Add("@id_usuario", SqlDbType.Int).Value = Helpers.SesionUsuario.IdUsuario;
+
+                con.Open();
+
+                SqlDataReader reader = cmd.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    PieSeries.Add(new PieSeries
+                    {
+                        Title = reader["Categoria"].ToString(),
+                        Values = new ChartValues<decimal>
+                        {
+                            Convert.ToDecimal(reader["Total"])
+                        },
+                        DataLabels = true
+                    });
+                }
+            }
         }
 
         private void CargarResumen()

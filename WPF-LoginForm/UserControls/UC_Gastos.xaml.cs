@@ -25,13 +25,15 @@ namespace WPF_LoginForm.UserControls
     public partial class UC_Gastos : UserControl
     {
         private int IdGastoSeleccionado = 0;
+        private int idUsuarioActivo;
 
-        public UC_Gastos()
+        public UC_Gastos(int idUsuario)
         {
             InitializeComponent();
 
-            CargarCategorias();
+            idUsuarioActivo = idUsuario;
 
+            CargarCategorias();
             CargarGastos();
         }
 
@@ -110,8 +112,7 @@ namespace WPF_LoginForm.UserControls
         {
             D_Gasto datos = new D_Gasto();
 
-            dgvGastos.ItemsSource =
-                datos.Listar().DefaultView;
+            dgvGastos.ItemsSource = datos.Listar(idUsuarioActivo).DefaultView;
         }
 
         

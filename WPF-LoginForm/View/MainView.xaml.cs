@@ -40,7 +40,7 @@ namespace WPF_LoginForm.View
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            MainContent.Content = new UC_Gastos();
+            MainContent.Content = new UC_Gastos(Helpers.SesionUsuario.IdUsuario);
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)

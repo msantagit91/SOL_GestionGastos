@@ -68,35 +68,21 @@ namespace WPF_LoginForm.Data
             return respuesta;
         }
 
-        public DataTable Listar()
+        public DataTable Listar(int idUsuario)
         {
             DataTable tabla = new DataTable();
 
-            SqlConnection con = new SqlConnection();
-
-            try
+            using (SqlConnection con = Conexion.CrearInstancia().CrearConexion())
             {
-                con = Conexion.CrearInstancia().CrearConexion();
+                SqlCommand cmd = new SqlCommand("SP_LISTAR_GASTOS", con);
+                cmd.CommandType = CommandType.StoredProcedure;
 
-                SqlCommand cmd =
-                    new SqlCommand("SP_LISTAR_GASTOS", con);
+                cmd.Parameters.Add("@id_usuario", SqlDbType.Int).Value = idUsuario;
 
-                cmd.CommandType =
-                    CommandType.StoredProcedure;
+                con.Open();
 
-                SqlDataAdapter da =
-                    new SqlDataAdapter(cmd);
-
-                da.Fill(tabla);
-            }
-            catch
-            {
-                tabla = null;
-            }
-            finally
-            {
-                if (con.State == ConnectionState.Open)
-                    con.Close();
+                SqlDataReader reader = cmd.ExecuteReader();
+                tabla.Load(reader);
             }
 
             return tabla;
