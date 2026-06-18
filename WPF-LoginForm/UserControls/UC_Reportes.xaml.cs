@@ -50,7 +50,7 @@ namespace WPF_LoginForm.UserControls
             if (save.ShowDialog() == true)
             {
                 PdfDocument documento = new PdfDocument();
-                documento.Info.Title = "Reporte de gastos del mes";
+                documento.Info.Title = "Reporte de gastos totales del mes";
 
                 PdfPage pagina = documento.AddPage();
                 XGraphics gfx = XGraphics.FromPdfPage(pagina);
