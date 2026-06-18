@@ -192,7 +192,7 @@
         FontSize="14"
         FontFamily="Montserrat"
         Foreground="#FFBABA"
-        BorderThickness="0">
+        BorderThickness="0" Click="btnCerrarSesion_Click">
 
                         <Button.Template>
 

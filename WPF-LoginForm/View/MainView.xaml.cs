@@ -57,5 +57,17 @@ namespace WPF_LoginForm.View
         {
             MainContent.Content = new UC_Reportes();
         }
+
+        private void btnCerrarSesion_Click(object sender, RoutedEventArgs e)
+        {
+            Helpers.SesionUsuario.IdUsuario = 0;
+            Helpers.SesionUsuario.Nombre = null;
+            Helpers.SesionUsuario.Usuario = null;
+
+            LoginView login = new LoginView();
+            login.Show();
+
+            this.Close();
+        }
     }
 }

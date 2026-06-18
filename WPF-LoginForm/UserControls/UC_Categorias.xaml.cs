@@ -5,6 +5,7 @@ using System.Windows.Controls;
 using WPF_LoginForm.Data;
 using WPF_LoginForm.Helpers;
 using WPF_LoginForm.Model;
+using PdfSharp.Fonts;
 
 namespace WPF_LoginForm.UserControls
 {
