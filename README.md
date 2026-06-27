@@ -22,49 +22,50 @@ Aplicación de escritorio desarrollada en **C#**, **WPF (.NET Framework)** y **S
 
 ### 🔐 Inicio de Sesión
 
-<img width="796" height="516" alt="Login" src="https://github.com/user-attachments/assets/LOGIN_AQUI" />
+<img width="799" height="549" alt="Login" src="https://github.com/user-attachments/assets/f7ef0916-24df-4d74-ab14-1f8846c97b85" />
 
 ---
 
 ### 👤 Registro de Usuarios
 
-<img width="791" height="515" alt="Registro Usuarios" src="https://github.com/user-attachments/assets/REGISTRO_USUARIO_AQUI" />
+<img width="797" height="547" alt="Registro Usuario" src="https://github.com/user-attachments/assets/cc643b2c-0ee2-41ea-9d66-92fc6eb14187" />
 
 ---
 
 ### 📊 Dashboard
 
-<img width="992" height="547" alt="Dashboard" src="https://github.com/user-attachments/assets/DASHBOARD_AQUI" />
+<img width="992" height="547" alt="Dashboard" src="https://github.com/user-attachments/assets/3e218741-d277-451b-8c26-1beac9cba92a" />
 
 ---
 
 ### 💳 Registro de Gastos
 
-<img width="992" height="547" alt="Registro Gastos" src="https://github.com/user-attachments/assets/GASTOS_AQUI" />
+<img width="991" height="548" alt="Registro de Gastos" src="https://github.com/user-attachments/assets/18ce5527-a4b9-473e-ab0f-3007dffee414" />
 
 ---
 
 ### 🗂️ Gestión de Categorías
 
-<img width="991" height="547" alt="Categorías" src="https://github.com/user-attachments/assets/CATEGORIAS_AQUI" />
+<img width="990" height="547" alt="Registro Categorias" src="https://github.com/user-attachments/assets/38d84d42-baca-4610-a119-3e981107dc20" />
 
 ---
 
 ### 📈 Reporte Mensual
 
-<img width="992" height="547" alt="Reporte Dashboard" src="https://github.com/user-attachments/assets/REPORTE_DASHBOARD_AQUI" />
+<img width="990" height="544" alt="Reporte Dashboard" src="https://github.com/user-attachments/assets/d47ae1a9-7271-4071-b487-8510ea2234b9" />
 
 ---
 
 ### 📄 Reporte PDF
 
-<img width="1366" height="768" alt="Reporte PDF" src="https://github.com/user-attachments/assets/PDF_AQUI" />
+<img width="1366" height="780" alt="Reporte pdf" src="https://github.com/user-attachments/assets/715d28df-5eba-4d84-b028-595316711f08" />
 
 ---
 
 ### 🏛️ Arquitectura del Proyecto
 
-<img width="250" height="594" alt="Arquitectura" src="https://github.com/user-attachments/assets/ARQUITECTURA_AQUI" />
+<img width="250" height="508" alt="Arquitectura" src="https://github.com/user-attachments/assets/23dc42a1-1939-44f1-ba6f-edfc7d3626d7" />
+
 
 ---
 
@@ -120,13 +121,19 @@ db_GestionGastos
 ### Procedimientos almacenados
 
 * SP_LOGIN
-* SP_LISTAR_GASTOS
-* SP_LISTAR_CATEGORIAS
+* SP_INSERTAR_USUARIO
+* SP_INSERTAR_CATEGORIA
 * SP_INSERTAR_GASTO
 * SP_EDITAR_GASTO
 * SP_ELIMINAR_GASTO
+* SP_LISTAR_GASTOS
+* SP_LISTAR_CATEGORIAS
+* SP_LISTAR_CATEGORIAS_DASHBOARD
+* SP_DASHBOARD_RESUMEN
 * SP_GRAFICO_CATEGORIAS
 * SP_REPORTE_GASTOS_MES
+* SP_ULTIMOS_GASTOS
+* SP_LISTAR_GASTOS_POR_CATEGORIA
 
 ---
 
