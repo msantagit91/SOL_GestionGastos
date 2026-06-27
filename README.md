@@ -52,7 +52,7 @@ Aplicación de escritorio desarrollada en **C#**, **WPF (.NET Framework)** y **S
 
 ### 📈 Reporte Mensual
 
-<img width="990" height="544" alt="Reporte Dashboard" src="https://github.com/user-attachments/assets/d47ae1a9-7271-4071-b487-8510ea2234b9" />
+<img width="990" height="546" alt="Reporte Dashboard" src="https://github.com/user-attachments/assets/21267cb1-77e6-4d6c-8aa5-f65a9e439482" />
 
 ---
 
